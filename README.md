@@ -16,7 +16,7 @@ The system tracks the emissions of a given recommendation algorithm on a given d
 
 ## Scripts
 
-1. src/tuning_tracker.py performs the hyper-parameter tuning of a given algorithm on a given dataset (both passed as script’s arguments), carrying out the grid-search.
+1. [src/tuning_tracker.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/tuning_tracker.py) performs the hyper-parameter tuning of a given algorithm on a given dataset (both passed as script’s arguments), carrying out the grid-search.
 
 NOTES:
 - All the available models and datasets are defined in src/config/global_config.pyfile.
@@ -28,7 +28,7 @@ NOTES:
 ```python
 $ python3 src/tuning_tracker.py --dataset=mind --model=BPR
 ```
-2. src/default_tracker.py tracks the emissions of a given algorithm with default and statically defined parameters on a given dataset (both passed as script’s arguments).
+2. [src/default_tracker.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/default_tracker.py) tracks the emissions of a given algorithm with default and statically defined parameters on a given dataset (both passed as script’s arguments).
 Note that we use this script to run data reduction experiments, by passing as dataset name "<dataset>_split_<n>" where n is the amount of training data, ranging in [2,4,6,8,10].
 
 NOTES:

@@ -1,0 +1,10 @@
+# MultiVAE
+latent_dimendion choice [32,64,128]
+mlp_hidden_size choice ['[100]','[300]','[600]']
+dropout_prob choice [0.0,0.5]
+anneal_cap choice [0.2]
+total_anneal_steps choice [200000]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

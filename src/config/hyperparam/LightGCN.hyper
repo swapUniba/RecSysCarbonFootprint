@@ -1,0 +1,8 @@
+# LightGCN
+embedding_size choice [32,64,128]
+n_layers choice [1,2,3,4]
+reg_weight choice [1e-05,1e-02]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

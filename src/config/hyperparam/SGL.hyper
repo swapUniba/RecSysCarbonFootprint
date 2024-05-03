@@ -1,0 +1,11 @@
+# SGL
+type choice ['ED','ND','RW']
+n_layers choice [2,3,4]
+ssl_tau choice [0.1,0.2,0.5,1.0]
+embedding_size choice [32,64,128]
+drop_ratio choice [0,0.1,0.2,0.4,0.5]
+ssl_weight choice [0.005,0.05,0.1,0.5,1.0]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

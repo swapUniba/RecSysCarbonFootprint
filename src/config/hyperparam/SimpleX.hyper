@@ -1,0 +1,12 @@
+# SimpleX
+embedding_size choice [32,64,128]
+margin choice [0,0.5,0.9]
+negative_weight choice [0,10,50]
+gamma choice [0.3,0.5,0.7]
+aggregator choice ['mean','user_attention','self_attention']
+history_len choice [50,100]
+reg_weight choice [1e-05]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

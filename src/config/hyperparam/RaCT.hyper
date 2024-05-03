@@ -1,0 +1,11 @@
+# RaCT
+latent_dimension choice [128,200,256,400,512]
+mlp_hidden_size choice ['[100]','[300]','[600]']
+dropout_prob choice [0.5,0.1]
+anneal_cap choice [0.2]
+total_anneal_steps choice [200000]
+metrics_k choice [100,300]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

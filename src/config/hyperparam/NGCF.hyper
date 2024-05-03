@@ -1,0 +1,11 @@
+# NGCF
+embedding_size choice [32,64,128]
+hidden_size_list choice ['[64,64,64]','[128,128,128]','[256,256,256]','[512,512,512]']
+node_dropout choice [0.0,0.1,0.2]
+message_dropout choice [0.0,0.1,0.2,0.3]
+reg_weight choice [1e-5,1e-2]
+delay choice [1e-5,1e-4,1e-4,1e-2,1e-1]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

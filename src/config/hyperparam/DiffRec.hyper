@@ -1,0 +1,22 @@
+# DiffRec
+noise_schedule choice ['linear','linear-var','cosine','binomial']
+noice_scale choice [0,1e-5,1e-4,1e-3,1e-2,1e-1]
+noice_min choice [5e-4,1e-3,5e-3]
+noice_max choice [5e-3,1e-2]
+sampling_noise choice [True,False]
+sampling_steps choice [0]
+reweight choice [True,False]
+mean_type choice ['x0','eps']
+steps choice [2,5,10,50]
+history_num_per_term choice [10]
+beta_fixed choice [True,False]
+dims_dnn choice ['[300]','[200,600]','[1000]']
+embedding_size choice [10,20]
+mlp_act_func choice ['tanh']
+time-aware choice [True,False]
+w_min choice [0.1,0.2,0.3]
+w_max choice [1]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [1e-3,1e-4,1e-5]

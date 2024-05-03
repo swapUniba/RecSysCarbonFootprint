@@ -1,0 +1,15 @@
+# MacridVAE
+embedding_size choice [32,64,128]
+dropout_prob choice [0.0,0.5]
+kafc choice [3,5,10,20]
+nogb choice [True,False]
+std choice [0.01,0.05]
+encoder_hidden_size choice ['[100]','[300]','[600]']
+tau choice [0.1,0.05]
+anneal_cap choice [0.2]
+total_anneal_steps choice [200000]
+reg_weights choice ['[0.0,0.0]']
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

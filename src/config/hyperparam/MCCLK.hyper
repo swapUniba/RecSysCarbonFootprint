@@ -1,0 +1,19 @@
+# MCCLK
+embedding_size choice [32,64,128]
+reg_weight choice [1e-5,1e-7]
+n_hops choice [2]
+node_dropout_rate choice [0.1,0.3,0.5]
+mess_dropout_rate choice [0.0,0.1]
+lightgcn_layer choice [2]
+item_agg_layer choice [1]
+alpha choice [0.2]
+beta choice [0.1]
+k choice [10,20,30,40,50]
+lambda_coeff choice [0.5]
+temperature choice [0.8]
+build_graph_separately choice [True,False]
+loss_type choice ['BPR','BCE']
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [1e-4,1e-3,5e-3]

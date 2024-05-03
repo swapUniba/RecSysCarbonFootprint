@@ -1,0 +1,2 @@
+recall@10	mrr@10	ndcg@10	hit@10	map@10	precision@10	gauc	itemcoverage@10	averagepopularity@10	giniindex@10	shannonentropy@10	tailpercentage@10
+0.1105	0.4373	0.2366	0.8275	0.1201	0.2148	0.8917	0.3861	870.6789	0.9178	0.0047	0.0

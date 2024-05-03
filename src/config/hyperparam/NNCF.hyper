@@ -1,0 +1,15 @@
+# NNCF
+ui_embedding_size choice [64,32]
+neigh_embedding_size choice [64,32]
+num_conv_kernel choice [128,64]
+conv_kernel_size choice [5]
+pool_kernel_size choice [5]
+mlp_hidden_size choice ['[128,64,32,16]','[64,32,16,8]']
+neigh_num choice [20,60]
+dropout choice [0.5,0.1]
+neigh_info_method choice ['random','knn','louvain']
+resolution choice [1.0,5.0]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.0005,0.0001,0.00005]

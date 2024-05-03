@@ -1,0 +1,11 @@
+# KGNNLS
+embedding_size choice [32,64,128]
+aggregator choice ['sum','neighbor','concat']
+reg_weight choice [1e-5,1e-7]
+neighbor_sample_size choice [4]
+n_iter choice [1]
+ls_weight choice [0.5]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

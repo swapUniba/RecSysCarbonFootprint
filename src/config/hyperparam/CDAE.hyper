@@ -1,0 +1,12 @@
+# CDAE
+loss_type choice ['BCE','MSE']
+hid_activation choice ['sigmoid','relu','tanh']
+out_activation choice ['sigmoid','relu']
+corruption_ratio choice [0.5]
+embedding_size choice [32,64,128]
+reg_weight_1 choice [0.0,0.5]
+reg_weight_2 choice [0.01,0.001]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

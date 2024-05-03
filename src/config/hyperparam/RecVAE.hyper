@@ -1,0 +1,13 @@
+# RecVAE
+hidden_dimendion choice [200,400,600]
+latent_dimension choice [64,100,128,150,200,256,300,400,512]
+dropout_prob choice [0.5,0.1]
+beta choice [0.2,0.6]
+gamma choice [0.005,0.001]
+mixture_weights choice ['[0.15, 0.75, 0.1]']
+n_enc_epochs choice [3,6]
+n_dec_epochs choice [1,2]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

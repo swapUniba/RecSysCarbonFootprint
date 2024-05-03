@@ -1,0 +1,8 @@
+-e deps/codecarbon-apple-silicon-chips
+-e deps/RecBole-master
+hyperopt==0.2.5
+torch==2.0.1
+pandas==2.0.2
+numpy==1.23.5
+faiss-cpu==1.7.4
+torch-scatter==2.1.2

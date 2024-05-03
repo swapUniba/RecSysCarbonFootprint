@@ -1,0 +1,6 @@
+# EASE
+reg_weight choice [1.0,10.0,100.0,250.0,500.0,1000.0]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

@@ -1,0 +1,8 @@
+# CKE
+embedding_size choice [32,64,128]
+kg_embedding_size choice [32,64,128]
+reg_weights choice ['[0.1,0.1]','[0.01,0.01]','[0.001,0.001]']
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

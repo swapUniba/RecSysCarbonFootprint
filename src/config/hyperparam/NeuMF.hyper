@@ -1,0 +1,9 @@
+# NeuMF
+mf_embedding_size choice [32,64,128]
+mlp_embedding_size choice [32,64,128]
+mlp_hidden_size choice ['[64,32,16]','[32,16,8]']
+dropout_prob choice [0.0,0.1,0.2,0.3,0.4,0.5]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

@@ -1,0 +1,8 @@
+# NCEPLRec
+rank choice [100,200,450]
+beta choice [0.8,1.0,1.3]
+reg_weight choice [1e-04,1e-02,1e2,15000]
+
+# ADDITIONAL_PARAMS
+epochs choice [10,50,100]
+learning_rate choice [0.01,0.001,0.0001]

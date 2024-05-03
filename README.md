@@ -20,7 +20,7 @@ The system tracks the emissions of a given recommendation algorithm on a given d
 
 NOTES:
 - All the available models and datasets are defined in [src/config/global_config.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/global_config.py) file.
-- All the grid-search params ranges for each model are defined in [src/config/hyperparam.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/hyperparam.py) folder.
+- All the grid-search params ranges for each model are defined in [src/config/hyperparam.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/hyperparam/) folder.
 - The results are saved in results folder.
 - Parameters names are case unsensitive while parameters values are case sensitive.
 
@@ -36,7 +36,7 @@ NOTES:
 - The deafult parameters are definded in [src/config/params_config.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/params_config.py) file.
 - The results are saved in results_shared folder.
 - Parameters names are case unsensitive while parameters values are case sensitive.
-- We use this script to run data reduction experiments; to do this, use as dataset name "\<dataset\>_split_\<n\>", where n is the amount of training data, ranging in [2,4,6,8,10].
+- We use this script to run data reduction experiments; to do this, use as dataset name "_\<dataset\>_\_split\_\<_n_\>", where _n_ is the amount of training data, ranging in [2,4,6,8,10].
 
 **Example**
 ```python

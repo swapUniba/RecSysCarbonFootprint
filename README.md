@@ -11,7 +11,7 @@ The system tracks the emissions of a given recommendation algorithm on a given d
 
 ## Requirements
 * **Global requirements**: Python >= 3.7 (tested on 3.8.5 and 3.11.4)
-* **System requirements**: see requirements.txt
+* **System requirements**: see [requirements.txt](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/requirements.txt)
 
 
 ## Scripts
@@ -47,7 +47,7 @@ $ python3 src/default_tracker.py --dataset=mind --model=BPR
 ```python
 $ python3 src/default_tracker.py --dataset=mind_split_6 --model=BPR
 ```
-3. [src/config/clear_cache.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/clear_cache.py) the libraries and modules above mentioned automatically generate a series of intermediate results, serializations and logs, this script was created to remove them from file system, especially useful in the early stages of work.
+3. [src/config/clear_cache.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/clear_cache.py) the libraries and modules above mentioned automatically generate a series of intermediate results, serializations and logs, this script was created to remove them from file system, especially useful in the early stages of work.
 
 It accepts the following arguments:
 
@@ -71,12 +71,17 @@ $ python3 src/clear_cache.py --saved
 * data/mind: dataset about news. Knowledge data is not available.
 * data/movielens: dataset about movies, version size 1M. Knowledge data is also available.
 
+As we previously stated, each dataset is provided with reduced amount of training data as:
+* data/amazon_books_60core_kg_split_[2,4,6,8,10]
+* data/mind_split_[2,4,6,8,10]
+* data/movielens_[2,4,6,8,10]
+
 ## Acknowledgments
 
-- **[@albertovalerio](https://github.com/albertovalerio)** and **[@FranchiniFelice720034](https://github.com/FranchiniFelice720034)** for the technical support
+- Huge thanks to **[@albertovalerio](https://github.com/albertovalerio)** and **[@FranchiniFelice720034](https://github.com/FranchiniFelice720034)** for the technical support.
 - **[@Recbole](https://recbole.io/)**
 - **[@CodeCarbon](https://mlco2.github.io/codecarbon/)**
 
 ## License
 
-Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See `LICENSE.txt` for more information.
+Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. See `LICENSE` for more information.

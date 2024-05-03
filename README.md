@@ -19,8 +19,8 @@ The system tracks the emissions of a given recommendation algorithm on a given d
 1. [src/tuning_tracker.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/tuning_tracker.py) performs the hyper-parameter tuning of a given algorithm on a given dataset (both passed as script’s arguments), carrying out the grid-search.
 
 NOTES:
-- All the available models and datasets are defined in src/config/global_config.pyfile.
-- All the grid-search params ranges for each model are defined in src/config/hyperparam folder.
+- All the available models and datasets are defined in [src/config/global_config.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/global_config.py) file.
+- All the grid-search params ranges for each model are defined in [src/config/hyperparam.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/hyperparam.py) folder.
 - The results are saved in results folder.
 - Parameters names are case unsensitive while parameters values are case sensitive.
 
@@ -29,13 +29,14 @@ NOTES:
 $ python3 src/tuning_tracker.py --dataset=mind --model=BPR
 ```
 2. [src/default_tracker.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/default_tracker.py) tracks the emissions of a given algorithm with default and statically defined parameters on a given dataset (both passed as script’s arguments).
-Note that we use this script to run data reduction experiments, by passing as dataset name "<dataset>_split_<n>" where n is the amount of training data, ranging in [2,4,6,8,10].
+Note that 
 
 NOTES:
-- All the available models and datasets are defined in src/config/global_config.py file.
-- The deafult parameters are definded in src/config/params_config.py file.
+- All the available models and datasets are defined in [src/config/global_config.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/global_config.py) file.
+- The deafult parameters are definded in [src/config/params_config.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/params_config.py) file.
 - The results are saved in results_shared folder.
 - Parameters names are case unsensitive while parameters values are case sensitive.
+- We use this script to run data reduction experiments; to do this, use as dataset name "\<dataset\>_split_\<n\>", where n is the amount of training data, ranging in [2,4,6,8,10].
 
 **Example**
 ```python
@@ -46,7 +47,7 @@ $ python3 src/default_tracker.py --dataset=mind --model=BPR
 ```python
 $ python3 src/default_tracker.py --dataset=mind_split_6 --model=BPR
 ```
-3. src/clear_cache.py the libraries and modules above mentioned automatically generate a series of intermediate results, serializations and logs, this script was created to remove them from file system, especially useful in the early stages of work.
+3. [src/config/clear_cache.py](https://github.com/swapUniba/RecSysCarbonFootprint/blob/main/src/config/clear_cache.py) the libraries and modules above mentioned automatically generate a series of intermediate results, serializations and logs, this script was created to remove them from file system, especially useful in the early stages of work.
 
 It accepts the following arguments:
 
